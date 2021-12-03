@@ -50,7 +50,7 @@ $(function(){
             });
             // 设置lmg标签显示小图
             if( !isShowBigImage){
-                let $img = "<img src = '"+ src +"'>";
+            let $img = "<img src = '"+ src +"'>";
                 $(item).empty().append($img);
             }else{
                 $(item).empty();
