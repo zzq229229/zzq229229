@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 浏览器为最新 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+    <meta name="format-detection" content="telephone=no, email=no,date=no,address=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <title>bootstrap</title>
+    <!-- 引入css -->
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入logo。ico -->
+    <link rel="shortcut icon" href="./images/jd .ico" type="image/x-icon">
+    <!-- 引入字体图标 -->
+    <!-- 引入jquery -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <!-- 引入bootstrap  js文件 -->
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+<body>
+    
+
+<!-- 头部 -->
+<header id="lk_header">
+    <!-- 上部分 -->
+    <div class="top-bar hidden-xs hidden-sm text-center ">
+        <div class="container ">
+
+            <div class="row">
+
+             <div class="top_bar-1 col-md-2">
+                 <a class="text-muted" href="" >
+                     <li class="glyphicon glyphicon-phone"></li>
+                     <span>关注微信号</span>
+                     <li class="glyphicon glyphicon-triangle-bottom"></li>
+                     <img src="images/ewm.jpg" alt="二维码" width="120px">
+                 </a>
+             </div>
+
+             <div class="top_bar-2 col-md-5 ">
+                <a class="text-muted"  href="">
+                    <li class="glyphicon glyphicon-phone-alt"></li>
+                    <span>800820-8820(全天服务)</span>
+                </a>
+             </div>
+             <div class="top_bar-3 col-md-2 ">
+                 <a class="text-muted" href="">企业合作</a>
+                 <a class="text-muted" href="">名师培训</a>
+             </div>
+             <div class="top_bar-4 col-md-3 ">
+                <a class="btn " href="#" role="button">免费注册</a>
+                <a class="btn " data-toggle="modal" data-target="#lk-login" href="#" role="button">立即登录</a>
+             </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- 下部分 -->
+    <nav class="navbar navbar-default navbar-static-top navbar-jqr ">
+        <div class="container">
+         
+          <div class="navbar-header">
+              <!-- 这个是展开收缩按钮 -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#jqr-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="教育" width="80px" >
+            </a>
+          </div>
+      
+         
+          <!-- 关联展开id="jqr-nav1" -->
+          <div class="collapse navbar-collapse" id="jqr-nav1">
+            <ul class="nav navbar-nav">
+              <li class="active"> <a href="#">关于我们  </a></li>
+              <li > <a href="#">课程介绍  </a></li>
+              <li > <a href="#">热门课程  </a></li>
+              <li > <a href="#">名师授课  </a></li>
+              <li > <a href="#">课堂互动  </a></li>
+              <li > <a href="#">联系我们  </a></li>
+            </ul>
+           <!-- 右边 -->
+            <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm ">
+              <li><a href="#">个人中心</a></li>
+             
+            </ul>
+          </div>
+        </div>     
+      </nav>
+
+</header>
+
+<!-- 头部结尾 -->
+
+ <!-- 轮播图 -->
+
+ <section id="lk_carousel" class="carousel slide" data-ride="carousel">
+   <!-- 指示器 -->
+  <ol class="carousel-indicators">
+    <li data-target="#lk_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#lk_carousel" data-slide-to="1"></li>
+    <li data-target="#lk_carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!--滚动内容 -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" data-sm-img="./images/lbt.jpg" data-lg-img="./images/th.jpg">
+    </div>
+    
+    <div class="item" data-sm-img="./images/lbt1.jpg" data-lg-img="./images/th1.jpg">
+    </div>
+
+    <div class="item" data-sm-img="./images/lbt2.jpg" data-lg-img="./images/th2.jpg">
+      </div>
+  
+  </div>
+
+  <!-- 小圆点 -->
+  <a class="left carousel-control" href="#lk_carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#lk_carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+ </section>
+
+ <!-- 关于我们 -->
+ <section id="lk_about" class="hidden-xs hidden-sm ">
+     <!-- 标题 -->
+     <div class="title  text-center">
+        <h1> <strong>关于我们</strong></h1>
+         <img src="./images/xiaoaix.png" alt="" class="img-responsive">
+     </div>
+     <!-- 主要内容 -->
+     <div class="container">
+         <div class="row">
+             <div class="col-md-8">
+                 <p class="text-muted">
+                    在我国,IT产业在过去5年经历了28%的增长速度,是同期国家GDP增长速度的3倍。IT行业现已进入高速发展期,成为所有行业中的朝阳产业。 
+                 </p> 
+                 <p class="text-muted">
+                    目前IT从业人员平均年薪已逾10万元。据智联招聘调查显示，十大高薪行业中，互联网/电子商务行业以8626元的月薪位于前列 
+                 </p>
+                </div>
+             <div class="col-md-4"> 
+                 <img src="./images/it1.jpg" alt="关于我们" class="img-responsive img-rounded "> 
+             </div>
+         </div>
+     </div>
+ </section>
+
+ <!-- 产品特色 -->
+ <section id="lk_product">
+     <div class="container">
+         <div class="row">
+             <!-- 头部选择 -->
+            <div style="overflow: auto;">
+                <ul class="nav nav-tabs" role="tablist" >
+                    <!-- 左边的 -->
+                    <li role="presentation" class="active">
+                        <a href="#product1" aria-controls="home" role="tab" data-toggle="tab">在线大学</a></li>
+                    <li role="presentation"><a href="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+                    <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+                          
+                    <!-- 右边的 -->
+                    <li class="pull-right hidden-sm hidden-xs " ><a href="#product4" aria-controls="settings" role="tab" data-toggle="tab">更多</a></li>
+                    
+                  </ul>
+
+            </div>
+            
+              <!-- 展示内容 -->
+              <div class="tab-content">  
+                  <!-- 在线大学 -->
+                <div role="tabpanel" class="tab-pane fade in active" id="product1">
+                   
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 pd-left">
+                                <!-- 第一部分 -->
+                                <div id="prod-one-1" class="medio">
+                                    <div class="media-left">
+                                        <a href="#">
+                                          <img class="media-object" src="./images/ewm.jpg" alt="二维码" width="140px">
+                                        </a>
+                                      </div>
+                                      <div class="media-body" style="padding-top: 90px;">
+                                        <h4 class="media-heading">更多资讯</h4>
+                                        <h4 class="media-heading">关注我们网站</h4>
+                                      </div>
+                                </div>
+                                 <!-- 第2部分 -->
+                                 <ol id="prod-one-2" class="breadcrumb lead" >
+                                    <li><a href="#">html5+全站</a></li>
+                                    <li><a href="#">Python+人工智能</a></li>
+                                    <li><a href="#">JavaEE</a></li>
+                                    <li><a href="#">C语言</a></li>
+                                  </ol>
+                                  <!-- 第3部分 -->
+                                  <h1 id="prod-one-3"> 欢迎来到IT行业
+                                      <strong class="text-danger">远方有你</strong>
+                                  </h1>
+                                   <!-- 第4部分 -->
+                                   <div id="prod-one-4">
+                                    <button type="button" class="btn btn-primary">课程资讯</button>
+                                    <button type="button" class="btn btn-success">了解更多</button>
+                                   </div>
+
+                            </div>
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img src="./images/0136011949.jpg" alt="sji" class="img-responsive">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- 会员专享 -->
+                <div role="tabpanel" class="tab-pane fade " id="product2">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <img src="./images/会员专享.jpg" alt="" class="img-responsive"  width="380px">
+                            </div>
+                            <div id="pd-two-1" class="col-md-8 pd-left">
+                                <h1 class="text-danger">会员专享优惠</h1>
+                                <p class="lead" style="margin: 15px;" >   在我国，IT产业在过去5年经历了28%的增长速度，是同期近期调查发现，全国IT类职能网上发布职位数有67万余个，其中软件工程、网络工程、信息管理与网络营销等紧缺型IT技术人才需求占70%以上 </p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!-- 优质视频 -->
+                <div role="tabpanel" class="tab-pane fade " id="product3">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-6 pd-left">
+                               <h1><strong>案例驱动.体系贯穿.系统全面</strong></h1>
+                               <h3>每天1个小时的学习
+                                   <span class="text-danger">提升自我</span>
+                               </h3>
+                               <p class="lead" style="margin: 15px;">  在我国，IT产业在过去5年经历了28%的增长速度，是同期据CNN调查显示，在薪酬潜力的职业中，前20位里有5个职业属于IT行业，而前50位中有14个属于IT行业。 </p>
+                               <div class="badge"style="padding:10px 15px;">已更新3000+视频/10000+订阅</div>
+                           </div>
+                           <div class="col-md-6 hidden-sm hidden-xs" >
+                               <img src="./images/it.jpeg" alt="" class="img-responsive">
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <!-- 更多 -->
+                <div role="tabpanel" class="tab-pane fade " id="product4">
+                    内容sf
+                </div>
+              </div>
+            
+         </div>
+     </div>
+ </section>
+
+ <!-- 热门课程 -->
+ <section id="lk_hot">
+        <!-- 标题 -->
+     <div class="title  text-center">
+        <h1> <strong>热门课程</strong></h1>
+         <img src="./images/xiaoaix.png" alt="" class="img-responsive">
+     </div>
+     <!-- 内容 -->
+     <div class="container">
+         <div class="row">
+             <!-- 11111 -->
+             <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left media-middle">
+                      <a href="#">
+                        <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><span class="text-danger">【热】</span>
+                        从零玩转HTML5+跨平台
+                    </h4>
+                      <p class="text-muted" style="margin-top: 10px;">
+                          折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                      </p>
+                    </div>
+                    <div class="media-right  text-danger">206节课</div>
+                  </div>
+             </div>
+             <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left media-middle">
+                      <a href="#">
+                        <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><span class="text-danger">【热】</span>
+                        从零玩转HTML5+跨平台
+                    </h4>
+                      <p class="text-muted" style="margin-top: 10px;">
+                          折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                      </p>
+                    </div>
+                    <div class="media-right  text-danger">206节课</div>
+                  </div>
+             </div>
+
+                <!-- 22222 -->
+                <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                          <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><span class="text-danger">【热】</span>
+                            从零玩转HTML5+跨平台
+                        </h4>
+                          <p class="text-muted" style="margin-top: 10px;">
+                              折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                          </p>
+                        </div>
+                        <div class="media-right  text-danger">206节课</div>
+                      </div>
+                 </div>
+                 <div class="col-md-6 lesson">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                          <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading"><span class="text-danger">【热】</span>
+                            从零玩转HTML5+跨平台
+                        </h4>
+                          <p class="text-muted" style="margin-top: 10px;">
+                              折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                          </p>
+                        </div>
+                        <div class="media-right  text-danger">206节课</div>
+                      </div>
+                 </div>
+
+                    <!-- 33333 -->
+             <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left media-middle">
+                      <a href="#">
+                        <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><span class="text-danger">【热】</span>
+                        从零玩转HTML5+跨平台
+                    </h4>
+                      <p class="text-muted" style="margin-top: 10px;">
+                          折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                      </p>
+                    </div>
+                    <div class="media-right  text-danger">206节课</div>
+                  </div>
+             </div>
+             <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left media-middle">
+                      <a href="#">
+                        <img class="media-object img-responsive img-circle img-thumbnail" width="100px" src="./images/touxinag.jpg" alt="头像">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading"><span class="text-danger">【热】</span>
+                        从零玩转HTML5+跨平台
+                    </h4>
+                      <p class="text-muted" style="margin-top: 10px;">
+                          折扣价复活币百分比功夫和水平恢复皮肤还是不偶只是发生
+                      </p>
+                    </div>
+                    <div class="media-right  text-danger">206节课</div>
+                  </div>
+             </div>
+           
+         </div>
+     </div>
+ </section>
+
+  <!-- 友情链接 -->
+  <section id="lk_link">
+          <!-- 标题 -->
+     <div class="title  text-center">
+        <h1> <strong>友情链接</strong></h1>
+         <img src="./images/xiaoaix.png" alt="" class="img-responsive">
+     </div>
+     <ul>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+         <li><a href=""><img  class="img-responsive"src="./images/jd .jpg" alt=""></a></li>
+     </ul>
+  </section>
+
+ <!-- 尾部 -->
+ <footer id="lk_footer">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-4 ft-1 col-md-offset-3">
+                     <div class="row">
+                         <ul class="col-md-6">
+                             <li> <a href="">关于我们</a></li>
+                             <li> <a href="">课程介绍</a></li>
+                             <li> <a href="">热门课程</a></li>
+                         </ul>
+                         <ul class="col-md-6">
+                            <li> <a href="">名师授课</a></li>
+                            <li> <a href="">课堂互动</a></li>
+                            <li> <a href="">联系我们</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="col-md-3 ft-2">
+                     <h5>公司地址：广东省深圳市</h5>
+                     <h5>联系电话：8008208820</h5>
+                     <h5>公司邮箱：123456789@qq.com</h5>
+                 </div>
+                 <div class="col-md-2 ft-3">
+                    <h5>联系我们:</h5>
+                    <a href=""> <img width="40px" data-toggle="tooltip" data-placement="bottom" title="关注微信123456789" src="./images/weix.png"  alt=""></a>
+                    <a  href=""> <img  width="40px" data-toggle="tooltip" data-placement="bottom" title="关注微博987654321" src="./images/youx.png" alt=""></a>
+                 </div>
+             </div>
+         </div>
+ </footer>
+
+ <!-- 登录 -->
+ <!-- Modal -->
+<div class="modal fade" id="lk-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">登录界面</h4>
+        </div>
+        <div class="modal-body">
+         <!-- 内容 -->
+         <input type="text" name="登录" id="" placeholder="请输入手机号码：">
+         <input type="text" name="登录" id="" placeholder="请输入密码：">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
